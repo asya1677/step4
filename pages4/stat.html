@@ -8,39 +8,41 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <h4> Главная</h4>
-        </a>
-        <ul>
-            <li>
-                <a href="stat.html">
-                    <h4>
-                        <i>Статьи >>></i>
-                    </h4>
-                </a>
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="galery.html">Галерея изображений</a>
-            </li>
-            <li>
-                <a href="registr.html">Регистрация</a>
-            </li>
-            <li>
-                <a href="kontact.html">Контакты</a>
-            </li>
-        </ul>
-        <br>
-    </header>
-
-    <main>
-        <section>
-            <a href="../st/model.html">
-                <h3> Моделирование вибраций и шума в коробке передач автомобиля </h3>
+        <div class="menu">
+            <a href="../index.html">
+                <h4> Главная</h4>
             </a>
-            <p>
+            <ul class="menu__list">
+                <li class="menu__list menu__list--stat">
+                    <a href="stat.html">
+                        <h4>
+                            <i>
+                                Статьи >>> </i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="menu__list menu__list--catalog">
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="menu__list menu__list--galery">
+                    <a href="galery.html">Галерея изображений</a>
+                </li>
+                <li class="menu__list menu__list--registr">
+                    <a href="registr.html">Регистрация</a>
+                </li>
+                <li class="menu__list menu__list--kontact">
+                    <a href="kontact.html">Контакты</a>
+                </li>
+            </ul>
+            <br>
+        </div>
+    </header>
+    <main>
+        <section class="theme">
+            <a href="../st/model.html">
+                <h3 class="theme__title"> Моделирование вибраций и шума в коробке передач автомобиля </h3>
+            </a>
+            <p class="theme__content">
                 При своей работе коробка передач, используемая для передачи энергии от двигателя к колесам, достаточно сильно шумит. Первая
                 причина данного нежелательного эффекта состоит в том, что...
                 <a href="../st/model.html">Читать далее</a>
@@ -48,11 +50,11 @@
             <a href="../st/model.html#comm"> Перейти к комментариям </a>
         </section>
 
-        <section>
+        <section class="theme">
             <a href="../st/analis.html">
-                <h3> Анализ срывов сверхпроводимости магнитов Большого адронного коллайдера в CERN </h3>
+                <h3 class="theme__title"> Анализ срывов сверхпроводимости магнитов Большого адронного коллайдера в CERN </h3>
             </a>
-            <p>
+            <p class="theme__content">
                 В Большом адронном коллайдере (БАК), подземном ускорителе частиц длиной 27 километров, пересекающем границу между Швейцарией
                 и Францией, два пучка частиц сталкиваются друг с другом, двигаясь со скоростью, близкой к скорости света.
                 Результаты высокоэнергетических столкновений дают нам информацию о...

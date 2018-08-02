@@ -8,64 +8,71 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <h4> Главная</h4>
-        </a>
-        <ul>
-            <li>
-                <a href="stat.html"> Статьи</a>
-            </li>
-            <li>
-                <a href="catalog.html">
-                    <h4>
-                        <i> Каталог >>></i>
-                    </h4>
-                </a>
-            </li>
-            <li>
-                <a href="galery.html">Галерея изображений</a>
-            </li>
-            <li>
-                <a href="registr.html">Регистрация</a>
-            </li>
-            <li>
-                <a href="kontact.html">Контакты</a>
-            </li>
-        </ul>
-        <br>
+        <div class="menu">
+            <a href="../index.html">
+                <h4> Главная</h4>
+            </a>
+            <ul class="menu__list">
+                <li class="menu__list menu__list--stat">
+                    <a href="stat.html"> Статьи</a>
+                </li>
+                <li class="menu__list menu__list--catalog">
+                    <a href="catalog.html">
+                        <h4>
+                            <i> Каталог >>></i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="menu__list menu__list--galery">
+                    <a href="galery.html">Галерея изображений</a>
+                </li>
+                <li class="menu__list menu__list--registr">
+                    <a href="registr.html">Регистрация</a>
+                </li>
+                <li class="menu__list menu__list--kontact">
+                    <a href="kontact.html">Контакты</a>
+                </li>
+            </ul>
+            <br>
+        </div>
     </header>
 
     <main>
-        <p>
-            <ul>Товары
-                <li>
-                    <ul>
-                        Фрукты
-                        <li>Ананас</li>
-                        <li>Банан</li>
-                        <li>Киви</li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    <ul>
-                        Овощи
-                        <li>Помидор</li>
-                        <li>Перец</li>
-                        <li>Лук</li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    <ul>
-                        Ягода
-                        <li>Голубика</li>
-                        <li>Черника</li>
-                        <li>Ежевика</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
+
+        <ul class="tovar">
+            <u>
+                <b> Товары: </b>
+            </u>
+            <br>
+            <br>
+            <li class="tovar__name">
+                Фрукты
+                <ul>
+                    <li class="tovar__name tovar__name--pozition">Ананас</li>
+                    <li class="tovar__name tovar__name--pozition">Банан</li>
+                    <li class="tovar__name tovar__name--pozition">Киви</li>
+                </ul>
+            </li>
+            <br>
+            <li class="tovar__name">
+                Овощи
+                <ul>
+                    <li class="tovar__name tovar__name--pozition">Помидор</li>
+                    <li class="tovar__name tovar__name--pozition">Перец</li>
+                    <li class="tovar__name tovar__name--pozition">Лук</li>
+                </ul>
+            </li>
+            <br>
+            <li class="tovar__name">
+                Ягода
+                <ul>
+                    <li class="tovar__name tovar__name--pozition">Голубика</li>
+                    <li class="tovar__name tovar__name--pozition">Черника</li>
+                    <li class="tovar__name tovar__name--pozition">Ежевика</li>
+                </ul>
+            </li>
+        </ul>
+
     </main>
 
     <footer>

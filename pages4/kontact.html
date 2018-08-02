@@ -8,31 +8,34 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <h4> Главная</h4>
-        </a>
-        <ul>
-            <li>
-                <a href="stat.html"> Статьи</a>
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="galery.html">Галерея изображений</a>
-            </li>
-            <li>
-                <a href="registr.html">Регистрация</a>
-            </li>
-            <li>
-                <a href="kontact.html">
-                    <h4>
-                        <i> Контакты >>> </i>
-                    </h4>
-                </a>
-            </li>
-        </ul>
-        <br>
+        <div class="menu">
+            <a href="../index.html">
+                <h4> Главная</h4>
+            </a>
+            <ul class="menu__list">
+                <li class="menu__list menu__list--stat">
+                    <a href="stat.html"> Статьи</a>
+                </li>
+                <li class="menu__list menu__list--catalog">
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="menu__list menu__list--galery">
+                    <a href="galery.html">Галерея изображений</a>
+                </li>
+                <li class="menu__list menu__list--registr">
+                    <a href="registr.html">Регистрация</a>
+                </li>
+                <li class="menu__list menu__list--kontact">
+                    <a href="kontact.html">
+                        <h4>
+                            <i>
+                                Контакты >>> </i>
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+            <br>
+        </div>
     </header>
 
     <main align="center">
@@ -49,22 +52,24 @@
                 <br>
                 <img src="../pic4/map.jpg" width="800px"> </a>
         </p>
-        <form align="center" method="POST">
+        <form class="form" align="center" method="POST">
             <fieldset>
                 <legend>Остались вопросы? Спроси!</legend>
-                <label for="login">Имя:</label>
+                <label for="login" class="form__name">Имя:</label>
                 <br>
                 <input type="text" placeholder="name" />
                 <br>
-                <label for="password">Телефон:</label>
+                <label for="email" class="form__name">Email:</label>
                 <br>
                 <input type="email" placeholder="user@gmail.com" id="email" name="email" />
+                <br> 
+                <label for="tel" class="form__name">Телефон:</label>
                 <br>
                 <input type="tel" placeholder="(XXX)-XXX-XXXX" />
-                <br>
+                <br> <br>
                 <textarea id="comment" name="comment" placeholder="Написать вопрос" cols="35" rows="8"></textarea>
                 <br>
-                <button type="submit" value="Отправить"> Задать вопрос </button>
+                <button type="submit" value="Отправить" class="form__button form__button--vopros"> Задать вопрос </button>
                 <br>
             </fieldset>
         </form>

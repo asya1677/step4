@@ -8,53 +8,56 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <h4> Главная</h4>
-        </a>
-        <ul>
-            <li>
-                <a href="stat.html"> Статьи</a>
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="galery.html">Галерея изображений</a>
-            </li>
-            <li>
-                <a href="registr.html">
-                    <h4>
-                        <i>Регистрация >>></i>
-                    </h4>
-                </a>
-            </li>
-            <li>
-                <a href="kontact.html">Контакты</a>
-            </li>
-        </ul>
-        <br>
+        <div class="menu">
+            <a href="../index.html">
+                <h4> Главная</h4>
+            </a>
+            <ul class="menu__list">
+                <li class="menu__list menu__list--stat">
+                    <a href="stat.html"> Статьи</a>
+                </li>
+                <li class="menu__list menu__list--catalog">
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="menu__list menu__list--galery">
+                    <a href="galery.html">Галерея изображений</a>
+                </li>
+                <li class="menu__list menu__list--registr">
+                    <a href="registr.html">
+                        <h4>
+                            <i>
+                                Регистрация >>> </i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="menu__list menu__list--kontact">
+                    <a href="kontact.html">Контакты</a>
+                </li>
+            </ul>
+            <br>
+        </div>
     </header>
-
     <main>
-        <table width="100%">
+        <table class="form" width="100%">
             <tr>
                 <td width="60px"></td>
                 <td align="left">
                     <h3>Регистрация нового пользователя</h3>
                     <form method="POST">
                         <br>
-                        <input type="text" placeholder="Имя" autofocus  />
+                        <input type="text" placeholder="Имя" autofocus />
                         <br>
                         <input type="text" placeholder="Фамилия" />
                         <br>
                         <input type="text" placeholder="Отчество" />
                         <br>
-                        <label for="email">Email: </label>
+                        <br>
+                        <label for="email" class="form__name">Email: </label>
                         <br>
                         <input type="email" placeholder="user@gmail.com" id="email" name="email" />
                         <br>
                         <br>
-                        <label for="phone">Телефон: </label>
+                        <label for="phone" class="form__name">Телефон: </label>
                         <br>
                         <input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
                         <br>
@@ -68,30 +71,30 @@
                         <input type="file" name="file" />
                         <br>
                         <br>
-                        <label for="date">Введите дату рождения </label>
+                        <label for="date" class="form__name">Введите дату рождения </label>
                         <br>
                         <input type="date" value="2010-03-01" max="2012-12-01" min="1920-12-01">
                         <br>
                         <br>
-                        <label for="comment">Расскажи о себе:</label>
+                        <label for="comment" class="form__name">Расскажи о себе:</label>
                         <br/>
                         <textarea id="comment" name="comment" placeholder="Написать о себе" cols="35" rows="8"></textarea>
                         <br>
                         <br>
-                        <label for="checkbox">Ваш пол </label>
+                        <label for="checkbox" class="form__name">Ваш пол </label>
                         <br>
                         <input type="checkbox" checked name="g" />Ж
                         <input type="checkbox" name="m" />M
                         <br>
                         <br>
-                        <label for="radio">Старше 18-ти лет? </label>
+                        <label for="radio" class="form__name">Старше 18-ти лет? </label>
                         <br>
                         <input type="radio" value="da" />Да
                         <input type="radio" value="net" />Нет
                         <br>
                         <br>
-                        <button type="reset">Отмена</button>
-                        <button type="submit" value="Регистрация">Регистрация </button>
+                        <button type="reset" class="form__button form__button--reset">Отмена</button>
+                        <button type="submit" value="Регистрация" class="form__button form__button--reg">Регистрация </button>
                     </form>
                 </td>
             </tr>
